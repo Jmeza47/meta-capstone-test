@@ -1,0 +1,151 @@
+.hero-container {
+  width: 100%;
+  height: 100%;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-wrapper {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8rem;
+  background-color: var(--primary);
+}
+
+.text-container {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  /* gap: 1rem; */
+}
+
+.text-container h2 {
+  color: var(--primary-variant);
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.text-container h3 {
+  font-size: 34px;
+  font-weight: 500;
+  color: var(--withe);
+  padding-bottom: 2rem;
+}
+
+.text-container p {
+  font-size: 24px;
+  color: var(--withe);
+  padding-bottom: 3rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.text-container .reserve-button {
+  border: none;
+  background-color: var(--primary-variant);
+  color: var(--dark);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 12px 42px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 250ms ease-in-out;
+}
+
+.text-container .reserve-button:hover {
+  background-color: var(--dark);
+  color: var(--primary-variant);
+  transition: 250ms ease-in-out;
+}
+
+.image-container img {
+  width: 450px;
+  height: 500px;
+  border-radius: 12px;
+  -webkit-box-shadow: 7px 7px 16px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 7px 16px 0px rgba(0,0,0,0.75);
+box-shadow: 7px 7px 16px 0px rgba(0,0,0,0.75);
+
+}
+
+@media only screen and (max-width: 1024px) { 
+  .image-container img {
+    width: 400px;
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .text-container{
+    padding: 2rem;
+  }
+
+  .image-container img {
+    width: 300px;
+    height: 350px;
+  }
+
+  .hero-wrapper {
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .text-container {
+    align-items:center;
+  }
+
+  .text-container h2 {
+    padding-top: 1rem;
+  }
+
+  .text-container p {
+    text-align: center;
+  }
+
+  .image-container {
+    display: none;
+  }
+
+  .image-container img {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .text-container h2 {
+    font-size: 42px;
+  }
+  
+  .text-container h3 {
+    font-size: 26px;
+  }
+  
+  .text-container p {
+    font-size: 20px;
+  }
+}

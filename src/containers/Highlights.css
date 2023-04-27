@@ -1,0 +1,108 @@
+.highlights-container {
+    width: 100%;
+    height: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.heading-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 25rem;
+    padding: 2rem;
+}
+
+.heading-btn h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.heading-btn .menu-btn {
+    border: none;
+    background-color: var(--primary-variant);
+    color: var(--dark);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 250ms ease-in-out;
+}
+
+.heading-btn .menu-btn:hover {
+    background-color: var(--dark);
+    color: var(--primary-variant);
+    transition: 250ms ease-in-out; 
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 270px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #eeeeee;
+  }
+
+  .card img {
+    width: 270px;
+    height: 240px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    /* gap: 2rem; */
+    padding: 2px 16px;
+  }
+
+  .container h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .container p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .container .price {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondary);
+  }
+
+  .container .order {
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+  }
